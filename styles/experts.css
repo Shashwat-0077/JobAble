@@ -1,0 +1,122 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: white;
+	color: #E6EBEE;
+}
+
+.heading{
+    font-size: 300%;
+    text-align: center;
+    background: #0094ff;
+    color: white;
+    padding: 30px;
+    border-radius: 0 0 50px 50px;
+}
+
+.all-cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+	background-color: #dfdfdf;
+	height: 75%;
+	width: 350px;
+	margin: 10vh auto;
+	border-radius: 25px;
+	padding-bottom: 1px;
+}
+
+h1 {
+	text-align: center;
+	width: 100%;
+	background-color: #0094ff;
+	border-radius: 25px 25px 0 0;
+	color: white;
+	padding: 30px 0;
+	font-weight: 800;
+	margin: 0;
+}
+
+.profile-pic {
+	display: block;
+	position: relative;
+	background-color: #0094ff;
+	width: 150px;
+	height: 150px;
+	margin: 0 auto;
+	margin-top: 30px;
+	overflow: hidden;
+	border-radius: 50%;
+}
+
+.avatar {
+	display: inline;
+	height: 150px;
+	width: 150px;
+}
+
+.bio {
+	display: block;
+	margin: 30px auto;
+	width: 280px;
+	height: auto;
+}
+
+.bio p {
+	color: black;
+	font-weight: lighter;
+	font-size: 15px;
+	text-align: justify;
+}
+
+.public-details {
+    color: black;
+	display: flex;
+	flex-direction: row;
+	height: auto;
+	width: 280px;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+	font-weight: 500;
+}
+
+.amount {
+	font-size: 25px;
+	margin: 0;
+}
+
+.label {
+	margin: 0;
+}
+
+.btn {
+	display: flex;
+	margin: 0 auto;
+	justify-content: space-between;
+	width: 280px;
+}
+
+button {
+	display: block;
+	position: relative;
+	padding: 10px 0;
+	width: 130px;
+	margin: 30px 0;
+	border-radius: 30px;
+	border: none;
+	font-size: 20px;
+	font-weight: 500;
+	background-color: #0094ff;
+	color: #E6EBEE;
+}
+
+.contact{
+	background-color: #7a7878;
+	color: black;
+}

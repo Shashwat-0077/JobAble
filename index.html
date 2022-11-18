@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Bootstrap -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+            crossorigin="anonymous"
+        />
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter&family=Merienda&family=Montserrat:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- font awesome -->
+        <script
+            src="https://kit.fontawesome.com/a62d299ccb.js"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- My styleSheet -->
+        <link rel="stylesheet" href="../styles/home.css" />
+        <link rel="stylesheet" href="../styles/navbar.css" />
+
+        <!-- My Scripts -->
+        <script src="../javascripts/canvas.js" defer></script>
+        <script src="../javascripts/preLoader.js" defer></script>
+        <script src="../javascripts/observers.js" defer></script>
+
+        <title>JobAble</title>
+    </head>
+    <body>
+        <div id="preloader"></div>
+
+        <div class="main">
+            <!-------------------- Navbar -------------------------->
+
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">JobAble</a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div
+                        class="collapse navbar-collapse"
+                        id="navbarSupportedContent"
+                    >
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#"
+                                    >Jobs near you</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Experts</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about_us.html"
+                                    >About us</a
+                                >
+                            </li>
+                        </ul>
+                        <button class="sign-in-button">Search</button>
+                    </div>
+                </div>
+            </nav>
+
+            <!-------------------- Head -------------------------->
+
+            <div class="head">
+                <canvas class="main-page-background"></canvas>
+                <div class="my-container">
+                    <div class="text">
+                        <b>
+                            <h1>Get Your<br />Dream<br />Job Today</h1>
+                        </b>
+                        <p>
+                            Explore all the most exciting job roles based on<br />
+                            your interest and study major.
+                        </p>
+                        <form action="#" class="input">
+                            <div class="location">
+                                <label for="location">Location</label>
+                                <input
+                                    type="text"
+                                    name="location"
+                                    id="location"
+                                    placeholder="Enter your Location"
+                                />
+                            </div>
+                            <div class="type">
+                                <label for="type">Type</label>
+                                <input
+                                    type="text"
+                                    name="type"
+                                    id="type"
+                                    placeholder="Enter the type of job"
+                                />
+                            </div>
+                            <button class="sub-btn">Submit</button>
+                        </form>
+                    </div>
+                    <div class="image">
+                        <img
+                            src="../static/images/landing page pic.png"
+                            alt=""
+                        />
+                    </div>
+                </div>
+            </div>
+
+            <!-------------------- Top Companies -------------------------->
+
+            <div class="top-comp">
+                <div class="main">
+                    <a href="#">
+                        <img
+                            src="https://cdn.freebiesupply.com/images/large/2x/google-logo-transparent.png"
+                            alt=""
+                        />
+                    </a>
+                    <div></div>
+                    <a href="#">
+                        <img
+                            src="https://pngimg.com/uploads/microsoft/microsoft_PNG20.png"
+                            alt=""
+                            style="width: 250px"
+                        />
+                    </a>
+                    <div></div>
+                    <a href="#">
+                        <img
+                            src="https://germainmaureau.com/app/uploads/2020/05/Amazon-logo.png"
+                            alt="amazon.png"
+                        />
+                    </a>
+                    <div></div>
+                    <a href="#">
+                        <img
+                            class="reliance"
+                            src="https://logodownload.org/wp-content/uploads/2019/10/reliance-industries-logo.png"
+                            alt=""
+                        />
+                    </a>
+                </div>
+            </div>
+
+            <!-- --------------------------features------------------------------- -->
+
+            <div class="features">
+                <div class="animate">
+                    <img
+                        src="../static/images/knowladge.jpg"
+                        alt="knowledge.jpeg"
+                        class="fade"
+                    />
+                    <div class="text">
+                        <h1>Gain Knowledge</h1>
+                        <p>
+                            Learn new techniques and enhance yourself to get
+                            more lucrative jobs, bolster your Resume with unique
+                            skill sets, and stand distinguished from the herd.
+                        </p>
+                        <button>Get Started</button>
+                    </div>
+                </div>
+                <div class="animate">
+                    <div class="text">
+                        <h1>Meet New People</h1>
+                        <p>
+                            Individuals do not come face to face by
+                            happenstance. They are necessary in other human
+                            perspectives, although if they do not always use
+                            their talents in a spiritual method or manner.
+                        </p>
+                        <button>Get Started</button>
+                    </div>
+                    <img
+                        src="../static/images/meet-new-ppl.webp"
+                        alt=""
+                        class="fade"
+                    />
+                </div>
+                <div class="animate">
+                    <img
+                        src="../static/images/office.webp"
+                        alt=""
+                        class="fade"
+                    />
+                    <div class="text">
+                        <h1>Perfect Jobs For You</h1>
+                        <p>
+                            A bloke's finest fortune is to be born into some
+                            occupation that provides them with work and
+                            satisfaction to secure Bread or broadswords.
+                        </p>
+                        <button>Get Started</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-----------------------------Comments---------------------------------->
+
+            <div class="comments">
+                <h1>What Client Says</h1>
+
+                <div
+                    class="my-container carousel slide"
+                    data-bs-ride="carousel"
+                >
+                    <div class="slider carousel-inner">
+                        <div class="my-slide carousel-item active">
+                            <div class="my-card">
+                                <div class="imgAndName">
+                                    <img
+                                        src="https://pbs.twimg.com/media/D8dDZukXUAAXLdY.jpg"
+                                        class="profile-pic"
+                                        alt=""
+                                    />
+                                    <p><b>kyle</b></p>
+                                </div>
+                                <div class="text">
+                                    <div class="quote">
+                                        <i class="fa-solid fa-quote-left"></i>
+                                    </div>
+                                    <div class="starsAndPara">
+                                        <h2>
+                                            <i class="fa-solid fa-star"></i
+                                            ><i class="fa-solid fa-star"></i
+                                            ><i class="fa-solid fa-star"></i
+                                            ><i class="fa-solid fa-star"></i
+                                            ><i class="fa-solid fa-star"></i>
+                                        </h2>
+                                        <p>
+                                            My job search has gone on for longer
+                                            than I hoped but I recently came
+                                            across Jobable and what a refreshing
+                                            change. My applications always get
+                                            acknowledged and I always receive
+                                            emails telling me if I've been
+                                            progressed or not. I will continue
+                                            to apply for jobs with Jobable.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="my-slide carousel-item">
+                            <div class="my-card">
+                                <div class="imgAndName">
+                                    <img
+                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1x_1ueYyzVI5MQ8SZMG6iKA7w-EpP_Q6riA&usqp=CAU"
+                                        class="profile-pic"
+                                        alt=""
+                                    />
+                                    <p><b>Shawn</b></p>
+                                </div>
+                                <div class="text">
+                                    <div class="quote">
+                                        <i class="fa-solid fa-quote-left"></i>
+                                    </div>
+                                    <div class="starsAndPara">
+                                        <h2>
+                                            <i class="fa-solid fa-star"></i
+                                            ><i class="fa-solid fa-star"></i
+                                            ><i class="fa-solid fa-star"></i
+                                            ><i class="fa-solid fa-star"></i
+                                            ><i class="fa-solid fa-star"></i>
+                                        </h2>
+                                        <p>
+                                            Seriously impressed with the level
+                                            of support the team at Jobable were
+                                            able to provide myself when I was
+                                            having technical issues applying for
+                                            roles, very patient and friendly
+                                            when it came to solving my problem.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="my-slide carousel-item">
+                            <div class="my-card">
+                                <div class="imgAndName">
+                                    <img
+                                        src="https://preview.redd.it/cpslext1vx971.png?auto=webp&s=a67d767ddec283c3490613cdb0b40c180a33daf6"
+                                        class="profile-pic"
+                                        alt=""
+                                    />
+                                    <p><b>Michel</b></p>
+                                </div>
+                                <div class="text">
+                                    <div class="quote">
+                                        <i class="fa-solid fa-quote-left"></i>
+                                    </div>
+                                    <div class="starsAndPara">
+                                        <h2>
+                                            <i class="fa-solid fa-star"></i
+                                            ><i class="fa-solid fa-star"></i
+                                            ><i class="fa-solid fa-star"></i
+                                            ><i class="fa-solid fa-star"></i
+                                            ><i class="fa-solid fa-star"></i>
+                                        </h2>
+                                        <p>
+                                            Your application system is
+                                            fantastic, job hunting can be very
+                                            frustrating and you are by far the
+                                            most friendly and professional
+                                            recruitment business I have worked
+                                            with.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="my-slide carousel-item">
+                            <div class="my-card">
+                                <div class="imgAndName">
+                                    <img
+                                        src="https://cyber-privacy.net/wp-content/uploads/thispersondoesnotexist.com-image02-1024x1024.jpg"
+                                        class="profile-pic"
+                                        alt=""
+                                    />
+                                    <p><b>Dickinson</b></p>
+                                </div>
+                                <div class="text">
+                                    <div class="quote">
+                                        <i class="fa-solid fa-quote-left"></i>
+                                    </div>
+                                    <div class="starsAndPara">
+                                        <h2>
+                                            <i class="fa-solid fa-star"></i
+                                            ><i class="fa-solid fa-star"></i
+                                            ><i class="fa-solid fa-star"></i
+                                            ><i class="fa-solid fa-star"></i
+                                            ><i class="fa-solid fa-star"></i>
+                                        </h2>
+                                        <p>
+                                            We've hired several qualified
+                                            applicants who report first seeing
+                                            the position on Jobable, and we'll
+                                            definitely utilize your services
+                                            again in future recruiting efforts.
+                                            It's been great working with you!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="my-slide carousel-item">
+                            <div class="my-card">
+                                <div class="imgAndName">
+                                    <img
+                                        src="https://cyber-privacy.net/wp-content/uploads/thispersondoesnotexist.com-image01.jpg.webp"
+                                        class="profile-pic"
+                                        alt=""
+                                    />
+                                    <p><b>Amelia</b></p>
+                                </div>
+                                <div class="text">
+                                    <div class="quote">
+                                        <i class="fa-solid fa-quote-left"></i>
+                                    </div>
+                                    <div class="starsAndPara">
+                                        <h2>
+                                            <i class="fa-solid fa-star"></i
+                                            ><i class="fa-solid fa-star"></i
+                                            ><i class="fa-solid fa-star"></i
+                                            ><i class="fa-solid fa-star"></i
+                                            ><i class="fa-solid fa-star"></i>
+                                        </h2>
+                                        <p>
+                                            Jobable is the real deal - a great
+                                            partner and passionate champion of
+                                            remote work! They help Sutherland
+                                            connect with job seekers who are
+                                            specifically looking for remote
+                                            and/or flexible work.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="my-slide carousel-item">
+                            <div class="my-card">
+                                <div class="imgAndName">
+                                    <img
+                                        src="https://static.generated.photos/vue-static/face-generator/landing/wall/7.jpg"
+                                        class="profile-pic"
+                                        alt=""
+                                    />
+                                    <p><b>Samuel</b></p>
+                                </div>
+                                <div class="text">
+                                    <div class="quote">
+                                        <i class="fa-solid fa-quote-left"></i>
+                                    </div>
+                                    <div class="starsAndPara">
+                                        <h2>
+                                            <i class="fa-solid fa-star"></i
+                                            ><i class="fa-solid fa-star"></i
+                                            ><i class="fa-solid fa-star"></i
+                                            ><i class="fa-solid fa-star"></i
+                                            ><i class="fa-solid fa-star"></i>
+                                        </h2>
+                                        <p>
+                                            Jobable has been a great partner to
+                                            Dell in our conversations with
+                                            candidates about flexible and
+                                            distributed work. We have partnered
+                                            on a virtual event and various
+                                            pieces of content that help attract
+                                            the best and brightest remote talent
+                                            to Dell!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ---------------- sign up --------------------- -->
+            <div class="sign-up">
+                <p>Lets Grow Together</p>
+                <button>Sign up</button>
+            </div>
+
+            <!-- ---------------- Footer --------------------- -->
+            <div class="footer">
+                <p>&#169; JobAble <span id="year"></span></p>
+            </div>
+        </div>
+
+        <!-- setting screen width -->
+        <script>
+            const main = document.querySelector(".main");
+            const my_navbar = document.querySelector(".navbar");
+            main.style.maxWidth = `${screen.width}px`;
+            my_navbar.style.maxWidth = `${screen.width}px`;
+        </script>
+
+        <!-- date -->
+        <script>
+            let year_span = document.querySelector("#year");
+            let current_year = new Date().getFullYear();
+            year_span.innerHTML = current_year;
+        </script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>

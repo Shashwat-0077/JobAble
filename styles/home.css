@@ -1,0 +1,594 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    pointer-events: none;
+}
+
+/* color pallet */
+:root {
+    --primary: #0094ff;
+    --secondary: #1a9ffe;
+    --padding: 70px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    width: 100%;
+}
+
+button:hover {
+    cursor: pointer;
+}
+/* ----------------------------preloader------------------------------------ */
+
+#preloader {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 100;
+
+    background: #fff url("../static/animations/preloader.gif") no-repeat center;
+    background-size: 30%;
+}
+
+/* ----------------------------head------------------------------------ */
+.head {
+    /* padding-top: 3em; */
+    display: flow-root;
+    position: relative;
+    width: 100%;
+    border-radius: 0 0 30px 30px;
+}
+
+.head .my-container {
+    color: white;
+    display: flex;
+    margin: 5em var(--padding) 9em;
+    justify-content: space-between;
+}
+
+.text {
+    width: 100%;
+}
+
+.image {
+    display: grid;
+    place-content: center;
+    width: 100%;
+}
+
+.image img {
+    max-width: 100%;
+}
+
+.head .text h1 {
+    font-size: 70px;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 20px;
+}
+
+.head .text p {
+    opacity: 75%;
+    font-size: 25px;
+}
+
+/* input */
+
+.head .input {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    max-width: 650px;
+    padding: 0.5em;
+    margin-top: 3em;
+    border-radius: 10px;
+    color: black;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+        rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+}
+
+.head .input label {
+    display: block;
+}
+
+.head .input div {
+    margin: 0 10px;
+    width: 33%;
+}
+
+.head .input button {
+    padding: 0.7em 2.3em;
+    font-size: 20px;
+    margin-left: 10px;
+    border-radius: 10px;
+    background-color: var(--secondary);
+    color: white;
+    border: 0;
+}
+
+.location {
+    border-right: 1px solid;
+    flex-shrink: 1;
+}
+
+.type {
+    flex-shrink: 2;
+}
+
+.sub-btn {
+    flex-shrink: 2;
+}
+
+.head .input input {
+    width: 95%;
+}
+
+.head .input input,
+.head .input input:focus-visible {
+    border: 0;
+    outline: 0;
+    font-size: 15px;
+}
+
+.head .input input::-webkit-input-placeholder {
+    font-size: 15px;
+}
+
+/* background */
+
+.main-page-background {
+    position: absolute;
+    background-color: var(--primary);
+    width: 100%;
+    height: 100%;
+    border-radius: 0 0 56.3px 56.3px;
+    z-index: -1;
+}
+
+/* ----------------------- top companies ------------------------- */
+.top-comp {
+    width: 100%;
+    padding: 0 var(--padding, auto);
+}
+
+.top-comp .main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr 1px);
+    place-items: center;
+    padding: 2em 0;
+    background-color: white;
+    position: relative;
+    border: 0;
+    bottom: 5.5em;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+        rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+
+.top-comp .main div {
+    border: 0.1px solid;
+    height: 100%;
+    background-color: black;
+}
+
+.top-comp .main img {
+    max-width: 200px;
+}
+
+.top-comp .main .reliance {
+    max-width: 150px;
+}
+
+/* --------------------------features-------------------------- */
+
+.features {
+    display: flex;
+    flex-direction: column;
+}
+
+.features > div {
+    display: flex;
+    margin: 100px 0;
+    justify-content: space-between;
+    padding: 4em 0;
+    align-items: center;
+}
+
+.features div:first-child {
+    margin: 0px;
+}
+
+.features img {
+    flex: 1 1 120em;
+    width: 50%;
+    opacity: 0;
+    transform: translateY(30%);
+    transition: transform 400ms ease-in-out, opacity 400ms ease-in-out;
+}
+
+.features img:nth-child(2) {
+    flex: 1 1 90em;
+}
+
+.features img.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* text */
+.features .text {
+    margin-top: 50px;
+    padding: 0 4em;
+}
+
+.features .text h1 {
+    font-size: 70px;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 20px;
+}
+
+.features .text p {
+    opacity: 75%;
+    font-size: 25px;
+}
+
+.features .text p,
+.features .text h1 {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: transform 500ms ease-in-out, opacity 1000ms ease-in-out;
+}
+
+.features .text .fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* buttons */
+
+.features .text button {
+    position: relative;
+    opacity: 0;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    margin-top: 1.5em;
+    font-size: 15px;
+    padding: 1em 2em;
+    border-radius: 7px;
+    border: 0;
+    background-color: var(--secondary);
+    transform: translateY(200%);
+    transition: transform 500ms ease-in-out, opacity 1000ms ease-in-out;
+}
+
+.features .text button:hover {
+    transform: scale(1.05);
+}
+
+.features .text button::before {
+    content: " ";
+    background-color: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 100%;
+    filter: blur(3px);
+    transform: skewX(45deg) translateX(170px);
+    transition: 500ms;
+}
+
+.features .text button:hover::before {
+    transform: skewX(45deg) translateX(-50px);
+}
+
+/* --------------------------comments--------------------------------- */
+
+.comments {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #f5f5f5;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.comments > h1 {
+    margin-left: 30%;
+    padding-top: 3%;
+}
+
+.slider {
+    width: 100%;
+}
+
+.my-slide {
+    width: 100%;
+}
+
+.profile-pic {
+    width: 100px;
+    max-height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 0.9em;
+}
+
+.my-card {
+    display: flex;
+    justify-content: space-between;
+    padding: 4em;
+    padding-top: 2em;
+}
+
+.imgAndName {
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-card .text {
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+}
+
+.my-card .text h2 {
+    color: var(--secondary);
+}
+
+.quote {
+    width: 5%;
+}
+
+.quote i {
+    font-size: 48px;
+    margin-top: 35%;
+    color: var(--secondary);
+}
+
+.starsAndPara {
+    width: 94%;
+}
+
+.starsAndPara p {
+    padding-top: 0.3em;
+}
+
+/* ----------------------------------sign up--------------------------------- */
+.sign-up {
+    display: grid;
+    grid-template-rows: 2;
+    place-items: center;
+    gap: 2rem;
+    margin: 100px 0;
+}
+
+.sign-up p {
+    text-align: center;
+    font-size: 70px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.sign-up button {
+    font-size: 17px;
+    padding: 1em 7em;
+    border-radius: 2em;
+    background-color: var(--secondary);
+    color: white;
+    border: 0;
+}
+
+/* -------------------footer------------------------ */
+
+.footer {
+    background-color: var(--primary);
+    padding: 1.5em;
+    display: grid;
+    place-content: center;
+    color: white;
+    font-size: x-large;
+}
+
+/* ---------------------- Media Queries ----------------------- */
+@media screen and (max-width: 1100px) {
+    /* Head */
+    .head .input button {
+        padding: 0.7em 0.7em;
+    }
+
+    /* Features */
+    .features .text {
+        padding: 0 2em 0 0;
+    }
+
+    .features .animate {
+        margin: 50px 0;
+    }
+
+    .features .animate:nth-of-type(2) .text {
+        padding: 0 0 0 2em;
+    }
+
+    .features .animate:nth-of-type(3) .text {
+        padding: 0 2em 0 2em;
+    }
+}
+
+/* -------------------------------------------------------- */
+
+@media screen and (max-width: 950px) {
+    /* Navbar */
+    .navbar .nav-items {
+        display: none;
+    }
+
+    .toggler {
+        display: block;
+    }
+
+    /* Head */
+
+    .head .text h1 {
+        font-size: 50px;
+    }
+
+    .head .text p {
+        font-size: 18px;
+    }
+
+    .head .my-container {
+        position: relative;
+        margin-bottom: 7em;
+    }
+
+    .head .input {
+        position: absolute;
+        max-width: 100%;
+        width: 100%;
+        z-index: 2;
+        padding: 1em 1em;
+    }
+
+    .head .input button {
+        padding: 1em 3em;
+    }
+
+    /* Top Companies */
+    .top-comp {
+        display: none;
+    }
+
+    /* Features */
+
+    .features .animate {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 5em 0;
+        padding: 0;
+    }
+
+    .features .animate:first-of-type {
+        margin-top: 7em;
+        margin-bottom: 5em;
+    }
+
+    .features .animate img {
+        width: 100%;
+        flex: 1 1 200px;
+    }
+
+    .animate:nth-of-type(2) {
+        flex-direction: column-reverse;
+    }
+
+    .features .animate .text {
+        text-align: center;
+        padding: 2em;
+    }
+
+    .features .animate:nth-of-type(2) .text {
+        padding: 2em;
+        margin-top: 1em;
+    }
+
+    .features .animate:nth-of-type(3) .text {
+        padding: 2em;
+        margin-top: 1em;
+    }
+
+    .features .text:first-of-type {
+        padding-top: 0;
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    /* Navbar */
+    .navbar {
+        padding: 10px 20px;
+    }
+
+    /* Head */
+
+    .head .my-container {
+        margin: 5em 20px 7em;
+    }
+
+    .image {
+        display: none;
+    }
+
+    .head,
+    .main-page-background {
+        border-radius: 0 0 20px 20px;
+    }
+
+    .head .text {
+        text-align: center;
+    }
+
+    .head .text form {
+        margin-top: 3.5em;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .head .text h1 {
+        font-size: 60px;
+    }
+
+    .head .text p {
+        font-size: 23px;
+    }
+
+    .head .text form button {
+        padding: 0.7em 1em;
+    }
+
+    /* Features */
+
+    .features .animate {
+        margin: 0;
+        margin-bottom: 50px;
+    }
+
+    .features .animate:first-of-type {
+        margin: 0;
+        margin-bottom: 50px;
+    }
+
+    .features .text h1 {
+        font-size: 40px;
+    }
+
+    .features .text p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    /* Sign-up  */
+    .sign-up p {
+        font-size: 50px;
+    }
+}

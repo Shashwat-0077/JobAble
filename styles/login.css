@@ -1,0 +1,74 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    pointer-events: none;
+}
+
+/* color pallet */
+:root {
+    --primary: #0094ff;
+    --secondary: #1a9ffe;
+    --padding: 70px;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.main {
+    display: flex;
+    width: 100%;
+    gap: 2%;
+    padding: 0 5em;
+}
+
+.main > div {
+    flex: 363.63px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 148, 255, 0.07);
+    border: 0.1em solid var(--primary);
+    border-radius: 1em;
+    overflow: hidden;
+    padding: 4em 3em;
+}
+
+.main > div i {
+    margin: auto;
+    font-size: 4em;
+    margin-bottom: 0.7em;
+}
+
+.main .content {
+    text-align: center;
+    color: #0094ff;
+}
+
+.content p {
+    margin-top: 1em;
+    font-size: 1.2em;
+}
+
+.main .sign-up-btn {
+    background-color: #0094ff;
+    font-size: 1.5em;
+    border: 0;
+    border-radius: 3em;
+    padding: 0.5em 2em;
+    margin-top: 1em;
+    color: white;
+}

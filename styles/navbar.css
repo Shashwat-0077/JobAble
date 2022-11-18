@@ -1,0 +1,57 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    pointer-events: none;
+}
+
+/* color pallet */
+:root {
+    --primary: #0094ff;
+    --secondary: #1a9ffe;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.navbar {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    background-color: transparent;
+    padding: 10px var(--padding);
+    z-index: 3;
+    transition: all 100ms;
+}
+
+.navbar.fixed {
+    position: fixed;
+    background-color: var(--primary);
+    top: -75px;
+}
+
+.navbar.pop-up {
+    top: 0;
+}
+
+.navbar-brand {
+    font-size: 2em;
+}
+
+.navbar a {
+    color: white;
+}
+
+.sign-in-button {
+    background-color: white;
+    border: 0;
+    width: 125px;
+    padding: 0.6em 0;
+    border-radius: 100px;
+}
